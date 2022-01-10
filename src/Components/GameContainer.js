@@ -8,7 +8,7 @@ function GameContainer() {
     const [searchData, setSearchData] = useState(gameData)
 
     useEffect(() => {
-        fetch('http://localhost:3000/games')
+        fetch('https://funleague.herokuapp.com/games')
         .then(res => res.json())
         .then(game => setGameData(game))
     }, [])
