@@ -8,7 +8,7 @@ function GameContainer() {
     const [searchData, setSearchData] = useState(gameData)
 
     useEffect(() => {
-        fetch('http://localhost:3000/games')
+        fetch('https://api.rawg.io/api/platforms?key=5fae1177a0674057a2256e20c17999ed')
         .then(res => res.json())
         .then(game => setGameData(game))
     }, [])
