@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
@@ -33,7 +32,7 @@ function GameCard({game}) {
         title={game.title}
         subheader={game.genre}
       />
-      {<a href={game.game_url} target='_blank'>
+      {<a href={game.game_url} target='_blank' rel='noreferrer'>
       <CardMedia
         component="img"
         height="194"

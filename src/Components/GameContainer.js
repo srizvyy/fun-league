@@ -47,7 +47,7 @@ function GameContainer() {
             <div id='game-container'>
                 {searchData.map((game) => {
                     return (
-                        <GameCard game={game}/>
+                        <GameCard key={game.id} game={game}/>
                     )
                 })}
             </div>
